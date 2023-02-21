@@ -1,5 +1,3 @@
-vi floation_ip_port_forwarding.sh 
-
 #!/bin/bash
 
 ##################################
