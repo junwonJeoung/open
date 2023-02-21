@@ -1,5 +1,3 @@
-vi compute_setting.sh 
-
 #!/bin/bash
 
 ##################################
