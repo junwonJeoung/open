@@ -1,5 +1,3 @@
-vi keystone.sh 
-
 #!/bin/bash
 ##################################
 # Change root privileges.
