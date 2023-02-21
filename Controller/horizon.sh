@@ -1,5 +1,3 @@
-vi horizon.sh 
-
 #!/bin/bash
 ##################################
 # Change root privileges.
