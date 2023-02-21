@@ -1,5 +1,3 @@
-vi controller-setting.sh 
-
 #!/bin/bash
 ##################################
 # Change root privileges.
