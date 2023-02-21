@@ -1,5 +1,3 @@
-vi controller-run.sh
-
 #!/bin/bash
 
 echo "Install Controller for OpenStack ..."
