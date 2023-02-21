@@ -1,5 +1,3 @@
-vi neutron-compute.sh 
-
 #!/bin/bash
 
 ##################################
