@@ -1,0 +1,65 @@
+vi set.conf 
+
+#!/bin/bash
+##################################
+# Inpute Value
+##################################
+CONTROLLER_HOSTv="controller"
+COMPUTE_HOSTv="compute1"
+SET_IPv="192.168.0.21"
+SET_IP2v="192.168.0.22"
+SET_IP_ALLOWv="192.168.0.0/22"
+INTERFACE_NAME_v="eth0"
+STACK_PASSWDv="open"
+CPU_ARCHv="arm64"
+CHECKER_OVSv="yes|no"
+OPENSTACK_VERv="yoga"
+##################################
+# Check Input Data
+##################################
+read -p "Do you want interactive input? {yes|no|ENTER=no}" CHECKER_O_
+if [ "$CHECKER_O_" = "yes" ]; then
+    read -p "Input CONTROLLER HOSTNAME: " CONTROLLER_HOSTv
+    read -p "Input COMPUTE HOSTNAME: " COMPUTE_HOSTv
+    read -p "Input Controller IP: (ex.192.168.0.2) " SET_IPv
+    read -p "Input Compute1 IP: (ex.192.168.0.3) " SET_IP2v
+    read -p "Input the allow IP (ex 192.168.0.0/24): " SET_IP_ALLOWv
+    read -p "Input INTERFACE_NAME: " INTERFACE_NAME_v
+    read -p "Input STACK_PASSWD: " STACK_PASSWDv
+    read -p "Input CPU_ARCH: " CPU_ARCHv
+    export CONTROLLER_HOST=$CONTROLLER_HOSTv
+    export COMPUTE_HOST=$COMPUTE_HOSTv
+    export SET_IP=$SET_IPv
+    export SET_IP2=$SET_IP2v
+    export SET_IP_ALLOW=$SET_IP_ALLOWv
+    export INTERFACE_NAME_=$INTERFACE_NAME_v
+    export STACK_PASSWD=$STACK_PASSWDv
+    export CPU_ARCH=$CPU_ARCHv
+    export CHECKER_OVS=$CHECKER_OVSv
+    export OPENSTACK_VER=$OPENSTACK_VERv
+else
+    export CONTROLLER_HOST=$CONTROLLER_HOSTv
+    export COMPUTE_HOST=$COMPUTE_HOSTv
+    export SET_IP=$SET_IPv
+    export SET_IP2=$SET_IP2v
+    export SET_IP_ALLOW=$SET_IP_ALLOWv
+    export INTERFACE_NAME_=$INTERFACE_NAME_v
+    export STACK_PASSWD=$STACK_PASSWDv
+    export CPU_ARCH=$CPU_ARCHv
+    export CHECKER_OVS=$CHECKER_OVSv
+    export OPENSTACK_VER=$OPENSTACK_VERv
+fi
+##################################
+# Print Input Data
+##################################
+echo $CONTROLLER_HOST
+echo $COMPUTE_HOST
+echo $SET_IP
+echo $SET_IP2
+echo $SET_IP_ALLOW
+echo $INTERFACE_NAME_
+echo $STACK_PASSWD
+echo $CPU_ARCH
+echo $CHECKER_OVS
+echo $OPENSTACK_VER
+
