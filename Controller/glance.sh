@@ -1,5 +1,4 @@
-vi glance.sh 
-#!/bin/bash
+ #!/bin/bash
 
 ##################################
 # Change root privileges.
