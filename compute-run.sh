@@ -1,5 +1,3 @@
-vi compute-run.sh 
-
 #!/bin/bash
 
 echo "Install Compute for OpenStack ..."
